@@ -136,13 +136,21 @@ cd backend
 mvn clean package
 ```
 
-## License
 
-This project is open source and available for personal and educational use.
+**✅ Quick Start (Copy & Paste)
 
-
+If you already have Docker installed, just run:**
+```bash
 git clone https://github.com/santolen-dev/fullstack-todo.git  
 cd fullstack-todo/backend  
 mvn clean package  
 docker build -t fullstack-todo .  
 docker run -p 8080:8080 fullstack-todo  
+```
+
+
+## License
+
+This project is open source and available for personal and educational use.
+
+
