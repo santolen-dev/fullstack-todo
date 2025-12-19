@@ -3,6 +3,8 @@
 A modern, feature-rich a full stack todo application built with React (frontend) and Spring Boot (backend), containerized with Docker for easy deployment.
 
 
+# 📸 Screenshots
+
 <img width="421" height="923" alt="fullstack-todo" src="https://github.com/user-attachments/assets/618a5a58-1861-4ddd-ac95-08f26f4d8be4" />
 
 
