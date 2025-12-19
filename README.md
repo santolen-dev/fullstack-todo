@@ -1,6 +1,11 @@
-# Todo List Web Application
+# Fullstack Todo App 🚀
 
-A modern, feature-rich todo list application built with React.js, Bootstrap, and Spring Boot.
+A modern, feature-rich a full stack todo application built with React (frontend) and Spring Boot (backend), containerized with Docker for easy deployment.
+
+
+<img width="421" height="923" alt="fullstack-todo" src="https://github.com/user-attachments/assets/618a5a58-1861-4ddd-ac95-08f26f4d8be4" />
+
+
 
 ## Features
 
@@ -23,7 +28,7 @@ A modern, feature-rich todo list application built with React.js, Bootstrap, and
 ## Technology Stack
 
 - **Frontend**: React.js 18, Bootstrap 5, Axios, Vite
-- **Backend**: Spring Boot 3.2.0, Java 17
+- **Backend**: Spring Boot 3.2.0, Java 21
 - **Build Tools**: Vite (frontend), Maven (backend)
 
 ## Project Structure
@@ -137,9 +142,9 @@ mvn clean package
 ```
 
 
-**✅ Quick Start (Copy & Paste)
+**✅ Quick Start (Copy & Paste):**
 
-If you already have Docker installed, just run:**
+If you already have Docker installed, just run:
 ```bash
 git clone https://github.com/santolen-dev/fullstack-todo.git  
 cd fullstack-todo/backend  
