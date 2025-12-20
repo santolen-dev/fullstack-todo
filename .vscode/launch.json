@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Spring Boot Application",
+            "request": "launch",
+            "mainClass": "com.teastore.todo.TodoApplication",
+            "projectName": "todo-backend",
+            "args": "",
+            "envFile": "${workspaceFolder}/backend/.env",
+            "cwd": "${workspaceFolder}/backend"
+        },
+        {
+            "name": "Launch Frontend (Chrome)",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/frontend/src"
+        },
+        {
+            "name": "Launch Frontend (Edge)",
+            "type": "msedge",
+            "request": "launch",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/frontend/src"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Full Stack App",
+            "configurations": [
+                "Launch Spring Boot Application",
+                "Launch Frontend (Chrome)"
+            ],
+            "stopAll": true
+        }
+    ]
+}
+

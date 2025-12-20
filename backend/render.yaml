@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: fullstack-todo
+    env: docker
+    repo: https://github.com/santolen-dev/fullstack-todo
+    branch: main
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8080
