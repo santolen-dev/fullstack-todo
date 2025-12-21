@@ -1,4 +1,26 @@
 import TodoItem from './TodoItem'
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+const API_BASE = "https://fullstack-todo-santo-oe07.onrender.com";
+
+function TodoList() {
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    axios.get(`${API_BASE}/api/todos`)
+      .then(res => setTodos(res.data))
+      .catch(err => console.error("Error fetching todos:", err));
+  }, []);
+
+  return (
+    <div>
+      {todos.map(todo => <p key={todo.id}>{todo.text}</p>)}
+    </div>
+  );
+}
+
+
 
 function TodoList({ todos, onToggleComplete, onUpdate, onDelete }) {
   if (todos.length === 0) {
